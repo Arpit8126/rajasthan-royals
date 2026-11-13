@@ -49,7 +49,7 @@ export default function OfficialRRPlayerShowcase({
   const isRR = activePlayer.IPL_Team === 'Rajasthan Royals';
 
   return (
-    <div className="relative rounded-3xl overflow-hidden rr-hero-bg rr-diagonal-stripes border border-[#3A334E] shadow-2xl mb-8 sm:mb-12">
+    <div className="relative rounded-3xl overflow-hidden rr-hero-bg rr-diagonal-stripes border border-[#3A334E] shadow-2xl mb-8 sm:mb-12 w-full max-w-full min-w-0">
       
       {/* Background Ambience & Glow Rings */}
       <div className="absolute -top-24 -left-24 w-72 sm:w-96 h-72 sm:h-96 bg-rr-blue/20 rounded-full blur-3xl pointer-events-none" />
@@ -133,7 +133,7 @@ export default function OfficialRRPlayerShowcase({
         </div>
 
         {/* Right Side: Player Name, Meta, Big Stats Row, and View Profile Button */}
-        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-left">
+        <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-left px-2 sm:px-0">
           
           {/* Name Header - First Name white, Last Name huge RR Pink */}
           <div>
@@ -266,11 +266,11 @@ export default function OfficialRRPlayerShowcase({
 
       </div>
 
-      {/* Carousel Navigation Buttons */}
+      {/* Carousel Navigation Buttons - Positioned beside photo on mobile (top-[200px]), centered on desktop (sm:top-1/2) */}
       <button
         onClick={handlePrev}
         aria-label="Previous Player"
-        className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#272236]/80 hover:bg-rr-pink text-white flex items-center justify-center backdrop-blur-md border border-[#3A334E] transition-all z-20 shadow-lg"
+        className="absolute left-2 sm:left-4 top-[200px] sm:top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#272236]/90 hover:bg-rr-pink text-white flex items-center justify-center backdrop-blur-md border border-[#3A334E] transition-all z-20 shadow-xl"
       >
         <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
       </button>
@@ -278,13 +278,13 @@ export default function OfficialRRPlayerShowcase({
       <button
         onClick={handleNext}
         aria-label="Next Player"
-        className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#272236]/80 hover:bg-rr-pink text-white flex items-center justify-center backdrop-blur-md border border-[#3A334E] transition-all z-20 shadow-lg"
+        className="absolute right-2 sm:right-4 top-[200px] sm:top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#272236]/90 hover:bg-rr-pink text-white flex items-center justify-center backdrop-blur-md border border-[#3A334E] transition-all z-20 shadow-xl"
       >
         <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
       </button>
 
       {/* Bottom Thumbnail Strip */}
-      <div className="relative z-10 px-3 sm:px-12 py-2.5 sm:py-3 bg-[#1A1624]/95 border-t border-[#3A334E] flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none">
+      <div className="relative z-10 px-3 sm:px-12 py-2.5 sm:py-3 bg-[#1A1624]/95 border-t border-[#3A334E] flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none w-full max-w-full min-w-0">
         <span className="text-[10px] sm:text-[11px] font-bold text-[#A99EBD] uppercase tracking-wider shrink-0 mr-1 hidden sm:inline">
           Scouted:
         </span>

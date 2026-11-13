@@ -184,7 +184,7 @@ export default function WarRoomAnalyticsDashboard({
   };
 
   return (
-    <div id="dashboard-matrix" className="rr-player-card p-4 sm:p-8 shadow-2xl space-y-5 sm:space-y-6 relative">
+    <div id="dashboard-matrix" className="rr-player-card p-4 sm:p-8 shadow-2xl space-y-5 sm:space-y-6 relative w-full max-w-full overflow-hidden min-w-0">
       
       {/* Top Header & Interactive Dashboard Tabs */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 border-b border-[#3A334E] pb-4 sm:pb-5">
@@ -276,10 +276,10 @@ export default function WarRoomAnalyticsDashboard({
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start w-full max-w-full min-w-0">
             
             {/* Chart A: Batters Normal vs HP Strike Rate Lift (Figure 1 Interactive) */}
-            <div className="lg:col-span-7 bg-[#1E1B2B] p-5 rounded-2xl border border-[#3A334E] space-y-3">
+            <div className="lg:col-span-7 bg-[#1E1B2B] p-3.5 sm:p-5 rounded-2xl border border-[#3A334E] space-y-3 w-full max-w-full min-w-0 overflow-hidden">
               <div className="flex items-center justify-between">
                 <h4 className="text-xs font-black uppercase tracking-wider text-white flex items-center gap-1.5 font-sans">
                   <Flame className="w-4 h-4 text-[#E41B66]" />
@@ -324,7 +324,7 @@ export default function WarRoomAnalyticsDashboard({
             </div>
 
             {/* Chart B: Pressure vs Baseline Scatter Plot */}
-            <div className="lg:col-span-5 bg-[#1E1B2B] p-5 rounded-2xl border border-[#3A334E] space-y-3">
+            <div className="lg:col-span-5 bg-[#1E1B2B] p-3.5 sm:p-5 rounded-2xl border border-[#3A334E] space-y-3 w-full max-w-full min-w-0 overflow-hidden">
               <div className="flex items-center justify-between">
                 <h4 className="text-xs font-black uppercase tracking-wider text-white font-sans">
                   Pressure Scatter & Volume
@@ -387,10 +387,10 @@ export default function WarRoomAnalyticsDashboard({
             </span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start w-full max-w-full min-w-0">
             
             {/* Chart A: Scatter Matrix of Economy vs Dot % */}
-            <div className="lg:col-span-8 bg-[#1E1B2B] p-5 rounded-2xl border border-[#3A334E] space-y-3">
+            <div className="lg:col-span-8 bg-[#1E1B2B] p-3.5 sm:p-5 rounded-2xl border border-[#3A334E] space-y-3 w-full max-w-full min-w-0 overflow-hidden">
               <div className="flex items-center justify-between">
                 <h4 className="text-xs font-black uppercase tracking-wider text-white font-sans flex items-center gap-1.5">
                   <Target className="w-4 h-4 text-cyan-400" />
@@ -433,7 +433,7 @@ export default function WarRoomAnalyticsDashboard({
             </div>
 
             {/* Chart B: Top Bowlers Wickets Breakdown */}
-            <div className="lg:col-span-4 bg-[#1E1B2B] p-5 rounded-2xl border border-[#3A334E] space-y-3">
+            <div className="lg:col-span-4 bg-[#1E1B2B] p-3.5 sm:p-5 rounded-2xl border border-[#3A334E] space-y-3 w-full max-w-full min-w-0 overflow-hidden">
               <h4 className="text-xs font-black uppercase tracking-wider text-white font-sans">
                 HP Wickets Leaderboard
               </h4>

@@ -74,7 +74,7 @@ export default function TacticalGapAnalysis({ onSelectPlayerByName }) {
   ];
 
   return (
-    <div id="tactics-gap-audit" className="bg-[#211C2E] border border-[#352D47] rounded-3xl p-4 sm:p-9 shadow-2xl space-y-6 sm:space-y-8">
+    <div id="tactics-gap-audit" className="bg-[#211C2E] border border-[#352D47] rounded-3xl p-4 sm:p-9 shadow-2xl space-y-6 sm:space-y-8 w-full max-w-full overflow-hidden min-w-0">
       
       {/* 1. Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4 border-b border-[#352D47] pb-4 sm:pb-6">
@@ -123,7 +123,7 @@ export default function TacticalGapAnalysis({ onSelectPlayerByName }) {
       </div>
 
       {/* 3. The 3 Clean Deficit Cards (Replaced Cluttered Design) */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6 items-stretch">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6 items-stretch w-full max-w-full min-w-0">
         {deficits.map((d, idx) => (
           <div
             key={idx}

@@ -8,11 +8,13 @@
     --foreground: 0 0% 100%;
   }
 
-  body {
+  html, body {
     background-color: #181622;
     color: #F8FAFC;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
   }
 }
 

@@ -63,13 +63,13 @@ export default function WarRoomDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-[#181622] text-slate-100 flex flex-col selection:bg-[#E41B66] selection:text-white pb-20">
+    <div className="min-h-screen bg-[#181622] text-slate-100 flex flex-col selection:bg-[#E41B66] selection:text-white pb-20 w-full max-w-full overflow-x-hidden">
       
-      {/* 1. Header with Scroll Navigation Links (No Cluttered Dropdowns) */}
+      {/* 1. Header with Scroll Navigation Links (4 Menus on Mobile, 5 on Desktop) */}
       <CommandBar />
 
       {/* Main Workspace Layout */}
-      <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-4 sm:pt-6 w-full space-y-8 sm:space-y-12">
+      <main className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-3 sm:pt-6 w-full space-y-6 sm:space-y-12 min-w-0 max-w-full overflow-x-hidden">
         
         {/* 2. Official RR Hero Showcase (Image 1 Style) */}
         <section id="players-showcase">
@@ -190,8 +190,8 @@ export default function WarRoomDashboard() {
       />
 
       {/* Official RR Footer */}
-      <footer className="mt-20 border-t border-[#3A334E] py-8 text-center text-xs text-[#A99EBD] bg-[#1E1B2B]">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="mt-12 sm:mt-20 border-t border-[#3A334E] py-6 sm:py-8 text-center text-xs text-[#A99EBD] bg-[#1E1B2B] w-full max-w-full overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
           <div className="flex items-center space-x-3">
             <img src="/images/rr_logo.png" alt="" className="h-8 w-auto object-contain" />
             <div className="text-left">

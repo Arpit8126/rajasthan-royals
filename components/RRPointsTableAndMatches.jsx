@@ -63,10 +63,10 @@ export default function RRPointsTableAndMatches({
   ];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start my-8">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start my-8 min-w-0 max-w-full overflow-hidden">
 
       {/* 1. Left Side: Tactical Matches / Gap Solvers (Exact Match to Image 3 Left) */}
-      <div className="lg:col-span-5 space-y-4">
+      <div className="lg:col-span-5 space-y-4 min-w-0 max-w-full">
 
         <div className="flex items-center justify-between">
           <h3 className="text-xl font-black text-white uppercase font-sans tracking-tight">
@@ -128,7 +128,7 @@ export default function RRPointsTableAndMatches({
       </div>
 
       {/* 2. Right Side: Points Table / High-Pressure Leaderboard (Exact Match to Image 3 Right) */}
-      <div className="lg:col-span-7 space-y-4">
+      <div className="lg:col-span-7 space-y-4 min-w-0 max-w-full">
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4">
           <div className="flex items-center space-x-2.5 sm:space-x-3">
@@ -159,8 +159,8 @@ export default function RRPointsTableAndMatches({
         </div>
 
         {/* Table Container (Exact Layout from Image 3) */}
-        <div className="bg-[#272236] border border-[#3A334E] rounded-2xl overflow-hidden shadow-xl">
-          <div className="overflow-x-auto scrollbar-none">
+        <div className="bg-[#272236] border border-[#3A334E] rounded-2xl overflow-hidden shadow-xl w-full max-w-full">
+          <div className="overflow-x-auto scrollbar-none w-full max-w-full">
             <table className="w-full text-left text-xs font-sans min-w-[500px] sm:min-w-full">
               <thead className="bg-[#1E1B2B] text-[#A99EBD] uppercase text-[10px] tracking-wider border-b border-[#3A334E]">
                 <tr>

@@ -19,7 +19,7 @@ export default function PlayerCard({
   return (
     <div
       onClick={() => onSelect(player, type)}
-      className={`group relative rounded-2xl p-3.5 sm:p-5 cursor-pointer transition-all duration-300 overflow-hidden flex flex-col sm:flex-row items-center sm:items-end justify-between gap-3.5 sm:gap-5 ${
+      className={`group relative rounded-2xl p-3.5 sm:p-5 cursor-pointer transition-all duration-300 overflow-hidden flex flex-col sm:flex-row items-center sm:items-end justify-between gap-3.5 sm:gap-5 w-full max-w-full min-w-0 ${
         isSelected 
           ? 'bg-[#2E2840] border-2 border-[#E41B66] shadow-rr-pink scale-[1.01]' 
           : 'rr-player-card hover:border-[#E41B66] hover:bg-[#2C263D]'
