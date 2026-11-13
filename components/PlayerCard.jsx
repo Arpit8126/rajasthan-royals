@@ -25,6 +25,19 @@ export default function PlayerCard({
           : 'rr-player-card hover:border-[#E41B66] hover:bg-[#2C263D]'
       }`}
     >
+      {/* 0. Big Standalone Rank Number (No rectangular card, no 'RANK' text) */}
+      <div className="absolute top-2.5 sm:top-4 left-3 sm:left-5 z-10 select-none pointer-events-none">
+        <span className={`text-4xl sm:text-6xl font-black font-sans leading-none tracking-tighter drop-shadow-md ${
+          player.Rank === 1 
+            ? 'text-[#E5A93C]' 
+            : player.Rank <= 3 
+              ? 'text-[#E41B66]' 
+              : 'text-white/35'
+        }`}>
+          {player.Rank}
+        </span>
+      </div>
+
       {/* 1. Left: Waist-Up Cutout Image (Exact Match to Image 4) */}
       <div className="w-28 h-36 sm:w-40 sm:h-52 relative flex items-end justify-center shrink-0">
         <img
@@ -51,13 +64,15 @@ export default function PlayerCard({
             </span>
           </div>
 
-          <span className={`px-2 sm:px-2.5 py-0.5 rounded text-[9px] sm:text-[10px] font-black uppercase ${
-            isRR 
-              ? 'bg-[#E41B66] text-white shadow-sm' 
-              : 'bg-[#332B45] text-[#A99EBD] border border-[#453A5A]'
-          }`}>
-            #{player.Rank} {isRR ? 'RR ASSET' : player.IPL_Team}
-          </span>
+          <div className="flex items-center space-x-1.5">
+            <span className={`px-2 sm:px-2.5 py-0.5 rounded text-[9px] sm:text-[10px] font-black uppercase ${
+              isRR 
+                ? 'bg-[#E41B66] text-white shadow-sm' 
+                : 'bg-[#332B45] text-[#A99EBD] border border-[#453A5A]'
+            }`}>
+              {player.IPL_Team}
+            </span>
+          </div>
         </div>
 
         {/* Player Name & Role */}

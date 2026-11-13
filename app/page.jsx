@@ -189,27 +189,6 @@ export default function WarRoomDashboard() {
         onClose={() => setIsDrawerOpen(false)}
       />
 
-      {/* Official RR Footer */}
-      <footer className="mt-12 sm:mt-20 border-t border-[#3A334E] py-6 sm:py-8 text-center text-xs text-[#A99EBD] bg-[#1E1B2B] w-full max-w-full overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
-          <div className="flex items-center space-x-3">
-            <img src="/images/rr_logo.png" alt="" className="h-8 w-auto object-contain" />
-            <div className="text-left">
-              <div className="font-black text-white uppercase tracking-wider font-sans">
-                Rajasthan Royals War Room
-              </div>
-              <div className="text-[10px] text-[#A99EBD]">
-                SupeRR Selector Season 2 • High-Pressure Reliability Matrix
-              </div>
-            </div>
-          </div>
-
-          <div className="text-slate-400 text-[11px] font-sans">
-            Designed to match the Official Rajasthan Royals Franchise War Room Specification
-          </div>
-        </div>
-      </footer>
-
     </div>
   );
 }
